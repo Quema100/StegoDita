@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link sizes="16x16" href="../img/stegoDita.png" rel="icon" type="image/x-icon">
+
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/encode.css">
+
+    <script src="../js/encode.js"></script>
+    <script src="../js/main.js"></script>
+    <title>STEGODITA - Encode</title>
+</head>
+
+<body>
+    <header id="header">
+        <button class="button" onclick="location.href='/'">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
+            </svg>
+            Back
+        </button>
+        <div class="toggle-container">
+            <input type="checkbox" id="mode-toggle">
+            <label for="mode-toggle" class="toggle-label">
+                <span class="sun">☀️</span>
+                <span class="moon">🌙</span>
+            </label>
+        </div>
+    </header>
+    <main>
+        <div id="encode">
+            <canvas id="canvas"></canvas>
+            <textarea id="message" placeholder="Enter your secret message here..." rows="4" cols="50"></textarea>
+            <div id="btns">
+                <button id="encodeBtn" class="btn">📝 Encode</button>
+                <button id="downloadBtn" class="btn">⬇️ Download Image</button>
+                <div class="upload-container" id="dropArea">
+                    <p>📂 Drop image here or click to select</p>
+                    <input type="file" accept="image/*" id="upload">
+                </div>
+            </div>
+            <div id="status">Status: Ready</div>
+            <pre id="output"></pre>
+        </div>
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,100 @@
+#main {
+    width: 100%;
+    height: 86vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#main>h1 {
+    font-size: 5rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin: 0 0 5vh 0;
+    text-shadow: 0 0 10px #7d7d7d;
+}
+
+#main>p {
+    font-size: 1rem;
+    margin: 0 0 6vh 0;
+    color: #151515;
+}
+
+#main>#links {
+    display: flex;
+    gap: 30px;
+}
+
+#main>#links>a {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.2rem;
+    color: #6a6a6a;
+    transition: color 0.3s;
+}
+
+#main>#links>a:hover {
+    color: #040404;
+}
+
+footer {
+    height: 6vh;
+    font-size: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* "Dark Mode" and "Light Mode" */
+body.light-mode #main>h1 {
+    font-size: 5rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin: 0 0 5vh 0;
+    text-shadow: 0 0 10px #7d7d7d;
+}
+
+body.light-mode #main>p {
+    font-size: 1rem;
+    margin: 0 0 6vh 0;
+    color: #151515;
+}
+
+body.light-mode #main>#links>a {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.2rem;
+    color: #6a6a6a;
+    transition: color 0.3s;
+}
+
+body.light-mode #main>#links>a:hover {
+    color: #040404;
+}
+
+body.dark-mode #main>h1 {
+    font-size: 5rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin: 0 0 5vh 0;
+    text-shadow: 0 0 10px #f1e7ff;
+}
+
+body.dark-mode #main>p {
+    font-size: 1rem;
+    margin: 0 0 6vh 0;
+    color: #ccc;
+}
+
+body.dark-mode #main>#links>a {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.2rem;
+    color: #c0c0c0;
+    transition: color 0.3s;
+}
+
+body.dark-mode #main>#links>a:hover {
+    color: #ffffff;
+}
