@@ -173,6 +173,7 @@ const encode = () => {
 
         if (!message) {
             status.textContent = '❗Please enter a message to encode.';
+            
             setTimeout(() => { 
                 status.textContent = 'Status: Ready';
             }, 2000);
@@ -187,7 +188,8 @@ const encode = () => {
     downloadBtn.addEventListener('click', () => {
 
         if (!isImageLoaded) {
-            status.textContent = '❗ Please upload an image first.';
+            status.textContent = '❗Please upload an image first.';
+
             setTimeout(() => { 
                 status.textContent = 'Status: Ready';
             }, 2000);
